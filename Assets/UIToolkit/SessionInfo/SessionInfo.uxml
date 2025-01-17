@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UIToolkit/SessionInfo/SessionInfoStyleSheet.uss?fileID=7433441132597879392&amp;guid=83b6470f0c8b0924884641ccc0a85e02&amp;type=3#SessionInfoStyleSheet" />
+    <ui:VisualElement name="Canvas" picking-mode="Ignore" class="session-info-canvas">
+        <ui:VisualElement name="SessionInfoContainer" class="session-info-container">
+            <ui:VisualElement class="horizontal-container">
+                <ui:VisualElement name="container-top-line" class="container-top-line">
+                    <ui:Label text="Binary Info" name="BinaryInfo" picking-mode="Ignore" class="binary-info" />
+                    <ui:Label text="FPS - Ping" name="RightInfo" picking-mode="Ignore" class="right-info" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Label text="BuildInfo - Args" name="ArgsInfo" picking-mode="Ignore" class="args-info" />
+            <ui:Label text="HardwareInfo" name="HardwareInfo" picking-mode="Ignore" class="hardware-info" />
+            <ui:VisualElement name="container-bottom-line" class="container-top-line">
+                <ui:Label text="ConnectionStatus" name="ConnectionInfo" class="connection-info horizontal-grow" />
+                <ui:Label text="Hide/Show" name="ShowSessionInfo" picking-mode="Ignore" class="session-info-label" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

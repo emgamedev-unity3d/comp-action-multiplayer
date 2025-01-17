@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UIToolkit/Game/CompetitiveActionStyleSheet.uss?fileID=7433441132597879392&amp;guid=25077356dd9bf4548b2c9e74070831b9&amp;type=3#CompetitiveActionStyleSheet" />
+    <ui:VisualElement name="Canvas" picking-mode="Ignore" class="canvas canvas-transparent-background">
+        <ui:VisualElement name="Container" picking-mode="Ignore" class="container">
+            <ui:VisualElement name="UIWrapper" picking-mode="Ignore">
+                <ui:VisualElement name="ConnectionPanel" picking-mode="Ignore">
+                    <ui:VisualElement name="SessionContainer" picking-mode="Ignore">
+                        <ui:Label text="Join Code" name="SessionCodeLabel" picking-mode="Ignore" />
+                        <ui:TextField name="SessionField" tabindex="8" value="_" />
+                        <ui:Button text="Join Existing Game" name="JoinButton" tabindex="9" />
+                    </ui:VisualElement>
+                    <ui:Button text="Cancel" name="CancelButton" tabindex="11" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

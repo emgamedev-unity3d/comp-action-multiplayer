@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UIToolkit/Game/CompetitiveActionStyleSheet.uss?fileID=7433441132597879392&amp;guid=25077356dd9bf4548b2c9e74070831b9&amp;type=3#CompetitiveActionStyleSheet" />
+    <ui:VisualElement name="Canvas" class="canvas canvas-transparent-background">
+        <ui:VisualElement name="Container" picking-mode="Ignore" class="container container-in-game">
+            <ui:VisualElement name="UIWrapper" picking-mode="Ignore">
+                <ui:VisualElement name="InGamePanel" picking-mode="Ignore">
+                    <ui:VisualElement class="input-container">
+                        <ui:Slider label="Look Sensitivity" value="3" high-value="8" name="LookSensitivitySlider" low-value="0.1" tabindex="1" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="input-container section-separator">
+                        <ui:Toggle label="Invert Y axis" name="InvertYAxis" tabindex="2" />
+                    </ui:VisualElement>
+                    <ui:Button text="Resume" name="ResumeButton" tabindex="3" />
+                    <ui:Button text="Main Menu" name="MainMenuButton" tabindex="4" />
+                    <ui:Button text="Quit" name="QuitButton" tabindex="5" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

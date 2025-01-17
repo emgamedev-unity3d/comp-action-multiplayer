@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UIToolkit/CompetitiveActionStyleSheet.uss?fileID=7433441132597879392&amp;guid=25077356dd9bf4548b2c9e74070831b9&amp;type=3#CompetitiveActionStyleSheet" />
+    <ui:VisualElement name="Canvas" picking-mode="Ignore" class="canvas canvas-transparent-background">
+        <ui:VisualElement name="V" picking-mode="Ignore" class="crosshair crosshair__v" />
+        <ui:VisualElement name="H" picking-mode="Ignore" class="crosshair crosshair__h" />
+    </ui:VisualElement>
+</ui:UXML>

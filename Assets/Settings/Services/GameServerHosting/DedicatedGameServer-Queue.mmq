@@ -1,0 +1,55 @@
+{
+  "$schema": "https://ugs-config-schemas.unity3d.com/v1/matchmaker/matchmaker-queue.schema.json",
+  "name": "multiplayer-n4e-dgs",
+  "enabled": true,
+  "maxPlayersPerTicket": 1,
+  "defaultPool": {
+    "variants": [],
+    "name": "default",
+    "enabled": true,
+    "timeoutSeconds": 40,
+    "matchLogic": {
+      "name": "1v1",
+      "matchDefinition": {
+        "teams": [
+          {
+            "name": "Team",
+            "teamCount": {
+              "min": 16,
+              "max": 16,
+              "relaxations": [
+                {
+                  "type": "RangeControl.ReplaceMin",
+                  "ageType": "Oldest",
+                  "value": 8,
+                  "atSeconds": 15
+                },
+                {
+                  "type": "RangeControl.ReplaceMin",
+                  "ageType": "Oldest",
+                  "value": 1,
+                  "atSeconds": 35
+                }
+              ]
+            },
+            "playerCount": {
+              "min": 1,
+              "max": 1,
+              "relaxations": []
+            },
+            "teamRules": []
+          }
+        ],
+        "matchRules": []
+      },
+      "backfillEnabled": true
+    },
+    "matchHosting": {
+      "type": "Multiplay",
+	  "fleetName" : "DedicatedGameServer",
+	  "buildConfigurationName": "DedicatedGameServer",
+	  "defaultQoSRegionName": "North America"
+    }
+  },
+  "filteredPools": []
+}

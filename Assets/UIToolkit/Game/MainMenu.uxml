@@ -1,0 +1,23 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UIToolkit/Game/CompetitiveActionStyleSheet.uss?fileID=7433441132597879392&amp;guid=25077356dd9bf4548b2c9e74070831b9&amp;type=3#CompetitiveActionStyleSheet" />
+    <ui:VisualElement name="Canvas" picking-mode="Ignore" class="canvas canvas-transparent-background">
+        <ui:VisualElement name="HidingBackground" picking-mode="Ignore" class="background" />
+        <ui:VisualElement name="Container" picking-mode="Ignore" class="container">
+            <ui:VisualElement name="UIWrapper" picking-mode="Ignore">
+                <ui:VisualElement name="ConnectionPanel" picking-mode="Ignore">
+                    <ui:VisualElement name="InputFieldWrapper" picking-mode="Ignore" class="section-separator">
+                        <ui:Label text="Player Name" name="PlayerName" picking-mode="Ignore" />
+                        <ui:TextField name="PlayerNameField" value="_" tabindex="1" />
+                        <ui:VisualElement name="VisualElement" class="input-container">
+                            <ui:Toggle label="Spectator Mode" name="SpectatorToggle" tabindex="2" picking-mode="Ignore" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:Button text="Create Game" name="CreateGame" tabindex="3" />
+                    <ui:Button text="Join Game" name="JoinGame" tabindex="4" />
+                    <ui:Button text="Matchmake" name="QuickJoin" tabindex="5" class="section-separator" />
+                    <ui:Button text="Quit" name="QuitButton" tabindex="6" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,4 @@
+<linker>
+    <!--Preserving VFXModule assembly to make sure the VisualEffect component and all its dependencies are included in IL2CPP builds -->
+    <assembly fullname="UnityEngine.VFXModule" preserve="all" />
+</linker>

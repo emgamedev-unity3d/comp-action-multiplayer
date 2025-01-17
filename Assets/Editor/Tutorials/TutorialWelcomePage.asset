@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0885f594ab85594caa28e1a96cbe0d8, type: 3}
+  m_Name: TutorialWelcomePage
+  m_EditorClassIdentifier: 
+  Modified:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Image: {fileID: 2800000, guid: fd251e9a41a52f6499899110b66d21e7, type: 3}
+  m_WindowTitle:
+    m_Untranslated: Welcome
+  m_Title:
+    m_Untranslated: Welcome to the Competitive Action Multiplayer template
+  m_Description:
+    m_Untranslated: 'This template shows you how to build a multiplayer first-person
+      shooter (FPS) game.
+
+
+      This project contains the basic elements of an
+      FPS game that you can customize with your own assets.
+
+
+      Follow the tutorials
+      to learn about the structure of this project and how it uses Multiplayer features
+      and Unity Gaming Services, or explore the project without tutorials. '
+  m_Buttons:
+  - Text:
+      m_Untranslated: I'll explore on my own
+    Tooltip:
+      m_Untranslated: 
+    OnClick:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 24f51071784d98e41a648ed830794873, type: 2}
+          m_TargetAssemblyTypeName: Unity.Template.Multiplayer.NGO.Editor.TutorialCallbacks,
+            Assembly-CSharp-Editor
+          m_MethodName: LoadMainMenuScene
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 1
+        - m_Target: {fileID: 11400000}
+          m_TargetAssemblyTypeName: Unity.Tutorials.Core.Editor.TutorialWelcomePage,
+            Unity.Tutorials.Core.Editor
+          m_MethodName: CloseCurrentModalDialog
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 1
+  - Text:
+      m_Untranslated: Start tutorials
+    Tooltip:
+      m_Untranslated: 
+    OnClick:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 24f51071784d98e41a648ed830794873, type: 2}
+          m_TargetAssemblyTypeName: Unity.Template.CompetitiveActionMultiplayer.TutorialCallbacks,
+            Assembly-CSharp-Editor
+          m_MethodName: LoadMainMenuScene
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 1
+        - m_Target: {fileID: 11400000, guid: 24f51071784d98e41a648ed830794873, type: 2}
+          m_TargetAssemblyTypeName: Unity.Template.CompetitiveActionMultiplayer.Editor.Tutorials.TutorialCallbacks,
+            Unity.Template.CompetitiveActionMultiplayer.Editor.Tutorials
+          m_MethodName: StartTutorial
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: c639427b3f334954586b60d41cc0b563, type: 2}
+            m_ObjectArgumentAssemblyTypeName: Unity.Tutorials.Core.Editor.TutorialContainer,
+              Unity.Tutorials.Core.Editor
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 1

@@ -1,0 +1,71 @@
+:root {
+    --color-bg: rgb(40, 42, 54);
+    --color-font-base: rgb(248, 248, 242);
+    --color-orange: rgb(255, 184, 108);
+    --color-green: rgb(80, 250, 123);
+    --color-red: rgb(255, 85, 85);
+    --color-cyan: rgb(139, 233, 253);
+    --color-purple: rgb(255, 121, 198);
+    --color-yellow: rgb(241, 250, 140);
+}
+
+Label {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    text-overflow: ellipsis;
+    -unity-text-align: upper-left;
+    color: var(--color-font-base);
+    white-space: normal;
+    -unity-font-style: normal;
+    -unity-font-definition: url("project://database/Assets/UIToolkit/SessionInfo/Fonts/IBMPlexMono-Regular-SDF.asset?fileID=11400000&guid=ea4527b60c07943b89229004f9413b24&type=2#IBMPlexMono-Regular-SDF");
+}
+
+.session-info-container {
+    align-self: stretch;
+    width: auto;
+    margin: 0;
+    padding: 5px 10px 5px 10px;
+    color: var(--color-font-base);
+    background-color: var(--color-bg);
+}
+
+.horizontal-container {
+    flex-grow: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.container-top-line {
+    max-width: 100%;
+    flex-direction: row;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.horizontal-grow {
+    flex-grow: 1;
+}
+
+.hardware-info {
+    color: var(--color-purple);
+}
+
+.connection-info {
+    color: var(--color-yellow);
+}
+
+.connection-info:hover {
+    color: var(--color-bg);
+    background-color: var(--color-yellow);
+}
+
+.binary-info {
+    flex-grow: 1;
+    flex-shrink: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 10px;
+}

@@ -1,0 +1,16 @@
+{
+    "name": "Unity.Template.CompetitiveActionMultiplayer.Server.Editor",
+    "rootNamespace": "Unity.Template.CompetitiveActionMultiplayer.Server.Editor",
+    "references": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

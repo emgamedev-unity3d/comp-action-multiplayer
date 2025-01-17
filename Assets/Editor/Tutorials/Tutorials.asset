@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89305aa391d1c5141bbe1628d930a2c5, type: 3}
+  m_Name: Tutorials
+  m_EditorClassIdentifier: 
+  Modified:
+    m_PersistentCalls:
+      m_Calls: []
+  ParentContainer: {fileID: 11400000, guid: e7bad0bb757fa964daddb36d69c97085, type: 2}
+  OrderInView: 0
+  BackgroundImage: {fileID: 2800000, guid: a36d7268f791f6a47baf8a2f9bf96146, type: 3}
+  Title:
+    m_Untranslated: Tutorials
+  Subtitle:
+    m_Untranslated: Learn about the workflows that this template demonstrates.
+  Description:
+    m_Untranslated: 
+  ProjectLayout: {fileID: 0}
+  Sections:
+  - OrderInView: 0
+    Heading:
+      m_Untranslated: Project Overview
+    Text:
+      m_Untranslated: Learn about the structure of this project.
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: 4667213e3ce650e4a99c33dc7bf55212, type: 3}
+    Tutorial: {fileID: 11400000, guid: ba174faa6ea1172418e4ddd026585395, type: 2}
+  - OrderInView: 1
+    Heading:
+      m_Untranslated: Quick play
+    Text:
+      m_Untranslated: Learn how to use PlayMode Tools and the GameBootstrap script
+        to test your gameplay.
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: 239b52162c46f5e4cb69dc69ab6ca6e6, type: 3}
+    Tutorial: {fileID: 11400000, guid: 0eaeb82cdffd6c448bcc50d4816e4e33, type: 2}
+  - OrderInView: 2
+    Heading:
+      m_Untranslated: Unity Gaming Services
+    Text:
+      m_Untranslated: 'Learn how to connect your project to a Unity cloud project
+        to use Unity Gaming Services like Matchmaker and Multiplay Hosting. '
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: 101db12634d032d4dba2adf7d09bc954, type: 3}
+    Tutorial: {fileID: 11400000, guid: 090bd9c885fc35f498c51254ef0b4286, type: 2}
+  - OrderInView: 3
+    Heading:
+      m_Untranslated: 'Unity Gaming Services: Matchmaker'
+    Text:
+      m_Untranslated: Learn how to set up Matchmaker rules for peer-to-peer (P2P)
+        matchmaking sessions in your project.
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: 3db692fc68a718a4a914ddf933bd0224, type: 3}
+    Tutorial: {fileID: 11400000, guid: 01ba5e6ae9eabe34bafc3780f359d766, type: 2}
+  - OrderInView: 4
+    Heading:
+      m_Untranslated: 'Gaming Services: Multiplay Hosting'
+    Text:
+      m_Untranslated: Learn how to set up Multiplay Hosting and build a Linux Dedicated
+        Server. This means your project doesn't require a host user to use Matchmaker.
+    Metadata: 
+    Url: 
+    Image: {fileID: 2800000, guid: 2da12505d7e4388448dc6e6294656492, type: 3}
+    Tutorial: {fileID: 11400000, guid: 0c26687d206f0d84f8ea0c018427223b, type: 2}

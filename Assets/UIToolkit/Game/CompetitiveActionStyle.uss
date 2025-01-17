@@ -1,0 +1,239 @@
+/*
+USS Keywords are ordered the same way UI Builder presents it
+for easier readability and comparison.
+- Display
+- Position
+- Flex
+- Alignment
+- Size
+- Spacing
+- Text
+- Background
+- Border
+- Transform
+ */
+
+:root {
+    flex-shrink: 1;
+
+    --color-default: rgb(250, 250, 250);
+    --color-canvas: #15161c;
+    --color-transparent: rgba(0, 0, 0, 0);
+    --color-primary: rgb(47, 112, 165);
+    --color-border: rgb(131, 180, 222);
+    --color-active: rgb(56, 101, 153);
+    --color-inactive: rgb(171, 171, 171);
+    --color-hovered: rgb(24, 63, 103);
+    --color-border-focused: rgb(254, 203, 47);
+    --color-input-background: rgb(45, 81, 123);
+    --color-progress-bar: rgb(186, 223, 255);
+    --color-border-hover-slider: rgb(186, 223, 255);
+    --color-crosshair: white;
+
+    font-size: var(--font-size-regular);
+    --font-size-regular: 26px;
+    --font-size-xsmall: 20px;
+
+    --border-width: 2px;
+
+    --padding-background: 40px;
+    --button-top-margin: 8px;
+    --crosshair-thickness: 3px;
+    --crosshair-size: 20px;
+    --toggle-box-size: 28px;
+
+    --width-container: 480px;
+    --width-container-in-game: 560px;
+    --width-slider-dragger: 15px;
+
+    --height-element: 60px;
+    --height-progress-bar: 25px;
+    --height-slider: 25px;
+}
+
+/* Canvas and Containers */
+.canvas {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-canvas);
+}
+.canvas-transparent-background {
+    background-color: var(--color-transparent);
+}
+.canvas-justify-bottom {
+    justify-content: flex-end;
+}
+
+.container {
+    opacity: 0.96;
+    width: var(--width-container);
+    padding: var(--padding-background);
+    background-repeat: repeat;
+    background-image: url("project://database/Assets/Art/Textures/GridEmissive_01.png?fileID=2800000&guid=d4d6919451fe3e24388816386a6d15a4&type=3#GridEmissive_01");
+    background-position-x: left 0;
+    background-position-y: top 0;
+    background-size: 10%;
+    -unity-background-image-tint-color: var(--color-default);
+    border-width: 1px;
+    border-color: var(--color-default);
+}
+.container-in-game {
+    width: var(--width-container-in-game);
+}
+.input-container {
+    align-items: center;
+    justify-content: center;
+    height: var(--height-element);
+    margin: 4px;
+    margin-top: var(--button-top-margin);
+    border-color: var(--color-border);
+    border-width: var(--border-width);
+}
+.input-container:hover {
+    background-color: var(--color-hovered);
+}
+
+/* Textfield */
+TextField {
+    flex-direction: row;
+    height: var(--height-element);
+    background-color: rgba(0, 0, 0, 0);
+}
+TextField .unity-text-field__input {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: var(--color-border);
+    border-width: var(--border-width);
+}
+TextField:hover .unity-text-field__input {
+    background-color: var(--color-hovered);
+}
+TextField:focus .unity-text-field__input {
+    background-color: var(--color-hovered);
+    border-color: var(--color-border-focused);
+}
+
+/* Toggle */
+Toggle .unity-toggle__checkmark {
+    width: var(--toggle-box-size);
+    height: var(--toggle-box-size);
+    margin-left: 8px;
+    background-color: var(--color-input-background);
+    -unity-background-image-tint-color: var(--color-default);
+    border-color: var(--color-border);
+    border-width: var(--border-width);
+}
+Toggle:hover .unity-toggle__checkmark {
+    background-color: var(--color-hovered);
+}
+Toggle:focus .unity-toggle__checkmark {
+    background-color: var(--color-hovered);
+    border-color: var(--color-border-focused);
+}
+
+/* Slider */
+Slider {
+    align-self: stretch;
+}
+Slider .unity-base-slider__dragger {
+    width: var(--width-slider-dragger);
+    height: var(--height-slider);
+    background-color: var(--color-active);
+    border-color: var(--color-border);
+    border-width: var(--border-width);
+}
+Slider:hover .unity-base-slider__dragger {
+    border-color: var(--color-border-hover-slider);
+    background-color: var(--color-hovered);
+}
+Slider:focus .unity-base-slider__dragger {
+    border-color: var(--color-border-focused);
+}
+Slider .unity-base-slider__tracker {
+    background-color: var(--color-progress-bar);
+}
+
+/* Buttons */
+Button {
+    height: var(--height-element);
+    margin-top: var(--button-top-margin);
+    background-color: var(--color-primary);
+    border-color: var(--color-border);
+    border-width: var(--border-width);
+    transition: scale;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
+}
+Button:active {
+    background-color: var(--color-active);
+    scale: 1.03;
+}
+Button:hover {
+    background-color: var(--color-hovered);
+    scale: 1.03;
+}
+Button:focus {
+    border-color: var(--color-border-focused);
+    scale: 1.03;
+}
+Button:disabled {
+    background-color: var(--color-inactive);
+    border-color: var(--color-inactive);
+    scale: 1.0;
+}
+
+/* Progress Bar */
+ProgressBar .unity-progress-bar__background {
+    min-height: var(--height-progress-bar);
+    background-color: var(--color-input-background);
+    border-color: var(--color-border);
+    border-width: var(--border-width);
+}
+ProgressBar .unity-progress-bar__progress {
+    background-color: var(--color-progress-bar);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+/* In Game */
+.crosshair {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: var(--color-crosshair);
+    translate: -50% -50%;
+}
+.crosshair__v {
+    width: var(--crosshair-thickness);
+    height: var(--crosshair-size);
+}
+.crosshair__h {
+    width: var(--crosshair-size);
+    height: var(--crosshair-thickness);
+}
+
+.player-name-tag {
+    left: 0;
+    position: absolute;
+    -unity-font-style: normal;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 20px;
+    color: rgb(255, 250, 250);
+    background-color: rgba(0, 0, 0, 0.65);
+    translate: -50% 0;
+}
+
+.unity-text-element {
+    -unity-text-align: middle-center;
+    color: var(--color-default);
+}
+
+.text-size-xsmall {
+    font-size: var(--font-size-xsmall);
+}
+.section-separator {
+    margin-bottom: 20px;
+}
+
+

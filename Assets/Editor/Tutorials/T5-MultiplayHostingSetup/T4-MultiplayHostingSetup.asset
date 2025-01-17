@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f107dc6d4c984c45bdafd3bb15f98f0, type: 3}
+  m_Name: T4-MultiplayHostingSetup
+  m_EditorClassIdentifier: 
+  TutorialTitle:
+    m_Untranslated: 'Gaming Services: Multiplay Hosting'
+  m_ProgressTrackingEnabled: 1
+  m_LessonId: ce088596-dc90-4920-89ee-33bc24b77878
+  m_Version: 1
+  m_ReturnToPreviousScenes: 1
+  m_SceneManagementBehavior: 1
+  m_Scenes:
+  - {fileID: 102900000, guid: da329004e7382194895b801d225a96a7, type: 3}
+  m_DefaultSceneCameraSettings:
+    m_CameraMode: 0
+    m_FocusMode: 0
+    m_Orthographic: 0
+    m_Size: 0
+    m_Pivot: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: 0, y: 0, z: 0, w: 0}
+    m_FrameObject:
+      m_SceneGuid: 
+      m_GameObjectGuid: 
+      m_SerializedComponentType:
+        m_TypeName: 
+      m_ComponentIndex: 0
+      m_AssetObject: {fileID: 0}
+      m_Prefab: {fileID: 0}
+    m_Enabled: 0
+  m_WindowLayout: {fileID: 0}
+  m_Pages:
+    m_Items:
+    - {fileID: 11400000, guid: 9c0bb599d140668498df82008ac42cfd, type: 2}
+    - {fileID: 11400000, guid: 9dbf1a2b6b8d63f4485c6f9f732fa3ca, type: 2}
+    - {fileID: 11400000, guid: 74936c64841a91b4fa7d8e06d19cb598, type: 2}
+    - {fileID: 11400000, guid: acb4d39093f28a5449a82a607a94de4a, type: 2}
+    - {fileID: 11400000, guid: 3f09ec29d9b6c1441ba782f15fd9e9b9, type: 2}
+    - {fileID: 11400000, guid: 115c8954275e8894588a5bb6cc0f08ac, type: 2}
+    - {fileID: 11400000, guid: c2672b785655e21499c98e2b74c56210, type: 2}
+    - {fileID: 11400000, guid: e775bdb337fe7c048857cc71fee82cea, type: 2}
+    - {fileID: 11400000, guid: 25f9306c7cf4ff44e84e1304efb44f38, type: 2}
+    - {fileID: 11400000, guid: 3776f17b4bf4d2940a1ce69eb671a3cf, type: 2}
+    - {fileID: 11400000, guid: a4238b3d78958eb41aef383e3c97ae99, type: 2}
+    - {fileID: 11400000, guid: 835cf8b0dab5aa842a8d94bb86db40ab, type: 2}
+    - {fileID: 11400000, guid: 1ab9d10385096c646a2306a6d48deb94, type: 2}
+    - {fileID: 11400000, guid: 97a7947ecd863614aa6d523901e3e352, type: 2}
+    - {fileID: 11400000, guid: 13cbc797a89ab4d44b75b4a8c296bd15, type: 2}
+  CompletionDialog: {fileID: 0}
+  Modified:
+    m_PersistentCalls:
+      m_Calls: []
+  Initiated:
+    m_PersistentCalls:
+      m_Calls: []
+  PageInitiated:
+    m_PersistentCalls:
+      m_Calls: []
+  GoingBack:
+    m_PersistentCalls:
+      m_Calls: []
+  Completed:
+    m_PersistentCalls:
+      m_Calls: []
+  Quit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Scene: {fileID: 0}
+  m_TutorialTitle: 

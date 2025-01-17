@@ -1,0 +1,24 @@
+{
+    "name": "Unity.Template.CompetitiveActionMultiplayer.Editor.Tutorials",
+    "rootNamespace": "",
+    "references": [
+        "GUID:953adc2a6b8b4e3c8df5b728bcd546e9",
+        "GUID:9e6ed7d51349b45518022aa545ab7e0b",
+        "GUID:92ca58cb8e483fd4e8b09ec3047180ba",
+        "GUID:7d1852719152341449d469f7cfd3f5bd",
+        "GUID:fb96225907e8e4c489ebe0f690ba2ecd",
+        "GUID:dca86c3434c38674a865b8fad7a81c91",
+        "GUID:a7ee5f2dd4e86422d9491fd586ffe6f5"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

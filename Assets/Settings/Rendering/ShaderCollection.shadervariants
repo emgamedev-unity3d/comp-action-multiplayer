@@ -1,0 +1,505 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!200 &20000000
+ShaderVariantCollection:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ShaderCollection
+  m_Shaders:
+  - first: {fileID: 66, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 106, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: _SUNDISK_NONE
+        passType: 0
+      - keywords: _SUNDISK_SIMPLE
+        passType: 0
+  - first: {fileID: 9000, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9001, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9002, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9003, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9004, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9007, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9100, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9101, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9103, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: UIE_FORCE_GAMMA
+        passType: 0
+  - first: {fileID: 19011, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: d6dae50ee9e1bfa4db75f19f99355220, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: _OUTPUT_DEPTH
+        passType: 0
+  - first: {fileID: 4800000, guid: ec9fec698a3456d4fb18cf8bacb7a2bc, type: 3}
+    second:
+      variants:
+      - keywords: _TONEMAP_ACES
+        passType: 0
+  - first: {fileID: 4800000, guid: e7857e9d0c934dc4f83f270f8447b006, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: _BLOOM_LQ _DITHERING _HDR_GRADING
+        passType: 0
+      - keywords: _BLOOM_LQ _HDR_GRADING
+        passType: 0
+  - first: {fileID: 4800000, guid: 1121bb4e615ca3c48b214e79e841e823, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 63eaba0ebfb82cc43bde059b4a8c65f6, type: 3}
+    second:
+      variants:
+      - keywords: _SMAA_PRESET_HIGH
+        passType: 0
+  - first: {fileID: 4800000, guid: 2aed67ad60045d54ba3a00c91e2d2631, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 5f1864addb451f54bae8c86d230f736e, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: e6e9a19c3678ded42a3bc431ebef7dbd, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 93446b5c5339d4f00b85c159e1159b7c, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: BLIT_DECODE_HDR
+        passType: 0
+  - first: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 8
+      - keywords: DOTS_INSTANCING_ON
+        passType: 8
+      - keywords: INSTANCING_ON
+        passType: 8
+      - keywords: 
+        passType: 13
+      - keywords: DIRLIGHTMAP_COMBINED DOTS_INSTANCING_ON LIGHTMAP_ON SHADOWS_SHADOWMASK
+          _ADDITIONAL_LIGHT_SHADOWS _DBUFFER_MRT3 _FORWARD_PLUS _MAIN_LIGHT_SHADOWS_CASCADE
+          _NORMALMAP _REFLECTION_PROBE_BLENDING _REFLECTION_PROBE_BOX_PROJECTION
+          _SHADOWS_SOFT
+        passType: 13
+      - keywords: DIRLIGHTMAP_COMBINED DOTS_INSTANCING_ON LIGHTMAP_ON SHADOWS_SHADOWMASK
+          _FORWARD_PLUS _MAIN_LIGHT_SHADOWS_CASCADE _NORMALMAP
+        passType: 13
+      - keywords: DIRLIGHTMAP_COMBINED LIGHTMAP_ON _ADDITIONAL_LIGHT_SHADOWS _DBUFFER_MRT3
+          _FORWARD_PLUS _NORMALMAP _REFLECTION_PROBE_BLENDING _REFLECTION_PROBE_BOX_PROJECTION
+        passType: 13
+      - keywords: DIRLIGHTMAP_COMBINED LIGHTMAP_ON _FORWARD_PLUS _NORMALMAP
+        passType: 13
+      - keywords: DOTS_INSTANCING_ON SHADOWS_SHADOWMASK _ADDITIONAL_LIGHT_SHADOWS
+          _DBUFFER_MRT3 _FORWARD_PLUS _MAIN_LIGHT_SHADOWS_CASCADE _REFLECTION_PROBE_BLENDING
+          _REFLECTION_PROBE_BOX_PROJECTION _SHADOWS_SOFT
+        passType: 13
+      - keywords: DOTS_INSTANCING_ON SHADOWS_SHADOWMASK _ADDITIONAL_LIGHT_SHADOWS
+          _DBUFFER_MRT3 _FORWARD_PLUS _MAIN_LIGHT_SHADOWS_CASCADE _REFLECTION_PROBE_BLENDING
+          _REFLECTION_PROBE_BOX_PROJECTION _SHADOWS_SOFT _SPECULARHIGHLIGHTS_OFF
+        passType: 13
+      - keywords: DOTS_INSTANCING_ON SHADOWS_SHADOWMASK _FORWARD_PLUS _MAIN_LIGHT_SHADOWS_CASCADE
+        passType: 13
+      - keywords: DOTS_INSTANCING_ON _NORMALMAP _WRITE_RENDERING_LAYERS
+        passType: 13
+      - keywords: DOTS_INSTANCING_ON _WRITE_RENDERING_LAYERS
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHT_SHADOWS _DBUFFER_MRT3 _FORWARD_PLUS _REFLECTION_PROBE_BLENDING
+          _REFLECTION_PROBE_BOX_PROJECTION
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHT_SHADOWS _EMISSION _FORWARD_PLUS _MAIN_LIGHT_SHADOWS
+          _RECEIVE_SHADOWS_OFF _REFLECTION_PROBE_BLENDING _REFLECTION_PROBE_BOX_PROJECTION
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHT_SHADOWS _FORWARD_PLUS _MAIN_LIGHT_SHADOWS _NORMALMAP
+          _REFLECTION_PROBE_BLENDING _REFLECTION_PROBE_BOX_PROJECTION
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHT_SHADOWS _FORWARD_PLUS _MAIN_LIGHT_SHADOWS _REFLECTION_PROBE_BLENDING
+          _REFLECTION_PROBE_BOX_PROJECTION
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHT_SHADOWS _FORWARD_PLUS _MAIN_LIGHT_SHADOWS _REFLECTION_PROBE_BLENDING
+          _REFLECTION_PROBE_BOX_PROJECTION _SPECULARHIGHLIGHTS_OFF
+        passType: 13
+      - keywords: _FORWARD_PLUS
+        passType: 13
+      - keywords: _FORWARD_PLUS _MAIN_LIGHT_SHADOWS
+        passType: 13
+      - keywords: _FORWARD_PLUS _MAIN_LIGHT_SHADOWS _NORMALMAP
+        passType: 13
+      - keywords: _FORWARD_PLUS _MAIN_LIGHT_SHADOWS _RECEIVE_SHADOWS_OFF
+        passType: 13
+      - keywords: _NORMALMAP
+        passType: 13
+      - keywords: _NORMALMAP _WRITE_RENDERING_LAYERS
+        passType: 13
+      - keywords: _WRITE_RENDERING_LAYERS
+        passType: 13
+  - first: {fileID: 4800000, guid: ee7e4c9a5f6364b688a332c67fc32cca, type: 3}
+    second:
+      variants:
+      - keywords: INSTANCING_ON
+        passType: 8
+      - keywords: _ADDITIONAL_LIGHT_SHADOWS _CLEARCOAT _FORWARD_PLUS _MAIN_LIGHT_SHADOWS
+          _REFLECTION_PROBE_BLENDING _REFLECTION_PROBE_BOX_PROJECTION _SURFACE_TYPE_TRANSPARENT
+        passType: 13
+      - keywords: _FORWARD_PLUS _MAIN_LIGHT_SHADOWS
+        passType: 13
+  - first: {fileID: -6465566751694194690, guid: c4bb68199a348db459cf2a8730e460fc, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 8
+      - keywords: DOTS_INSTANCING_ON
+        passType: 8
+      - keywords: INSTANCING_ON
+        passType: 8
+      - keywords: DOTS_INSTANCING_ON
+        passType: 13
+      - keywords: DOTS_INSTANCING_ON SHADOWS_SHADOWMASK _ADDITIONAL_LIGHT_SHADOWS
+          _DBUFFER_MRT3 _FORWARD_PLUS _MAIN_LIGHT_SHADOWS_CASCADE _REFLECTION_PROBE_BLENDING
+          _REFLECTION_PROBE_BOX_PROJECTION _SHADOWS_SOFT
+        passType: 13
+      - keywords: DOTS_INSTANCING_ON SHADOWS_SHADOWMASK _FORWARD_PLUS _MAIN_LIGHT_SHADOWS_CASCADE
+        passType: 13
+      - keywords: DOTS_INSTANCING_ON _WRITE_RENDERING_LAYERS
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHT_SHADOWS _FORWARD_PLUS _MAIN_LIGHT_SHADOWS _REFLECTION_PROBE_BLENDING
+          _REFLECTION_PROBE_BOX_PROJECTION
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHT_SHADOWS _FORWARD_PLUS _REFLECTION_PROBE_BLENDING
+          _REFLECTION_PROBE_BOX_PROJECTION
+        passType: 13
+      - keywords: _FORWARD_PLUS
+        passType: 13
+      - keywords: _WRITE_RENDERING_LAYERS
+        passType: 13
+  - first: {fileID: -6465566751694194690, guid: 610fc71e5b2cd3d4c91ded4a75de46c5, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 8
+      - keywords: INSTANCING_ON
+        passType: 8
+      - keywords: 
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHT_SHADOWS _FORWARD_PLUS _MAIN_LIGHT_SHADOWS _REFLECTION_PROBE_BLENDING
+          _REFLECTION_PROBE_BOX_PROJECTION
+        passType: 13
+      - keywords: _FORWARD_PLUS _MAIN_LIGHT_SHADOWS
+        passType: 13
+      - keywords: _WRITE_RENDERING_LAYERS
+        passType: 13
+  - first: {fileID: -6465566751694194690, guid: 6e031746731dfdb4a9dfee05828a66e2, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 36e335017ad71d54fbb10842863188ae, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 7f888aff2ac86494babad1c2c5daeee2, type: 3}
+    second:
+      variants:
+      - keywords: DOTS_INSTANCING_ON
+        passType: 0
+  - first: {fileID: -6465566751694194690, guid: aafdf5e18c761844d84130bfdb15e239, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: 
+        passType: 8
+      - keywords: 
+        passType: 13
+      - keywords: _WRITE_RENDERING_LAYERS
+        passType: 13
+  - first: {fileID: 4800000, guid: f56e60ad0c507204e9fe0e4a10befef9, type: 3}
+    second:
+      variants:
+      - keywords: INSTANCING_ON SHADOWS_SHADOWMASK _ADDITIONAL_LIGHT_SHADOWS _DBUFFER_MRT3
+          _FORWARD_PLUS _MAIN_LIGHT_SHADOWS_CASCADE _REFLECTION_PROBE_BLENDING _REFLECTION_PROBE_BOX_PROJECTION
+          _SHADOWS_SOFT
+        passType: 13
+      - keywords: INSTANCING_ON SHADOWS_SHADOWMASK _FORWARD_PLUS _MAIN_LIGHT_SHADOWS_CASCADE
+        passType: 13
+  - first: {fileID: 4800002, guid: f56e60ad0c507204e9fe0e4a10befef9, type: 3}
+    second:
+      variants:
+      - keywords: INSTANCING_ON
+        passType: 0
+      - keywords: INSTANCING_ON _DBUFFER_MRT3
+        passType: 0
+  - first: {fileID: 4800004, guid: f56e60ad0c507204e9fe0e4a10befef9, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 8
+      - keywords: INSTANCING_ON
+        passType: 8
+      - keywords: INSTANCING_ON _ADDITIONAL_LIGHT_SHADOWS _FORWARD_PLUS _MAIN_LIGHT_SHADOWS_CASCADE
+          _REFLECTION_PROBE_BLENDING _REFLECTION_PROBE_BOX_PROJECTION _SHADOWS_SOFT
+        passType: 13
+      - keywords: INSTANCING_ON _FORWARD_PLUS _MAIN_LIGHT_SHADOWS_CASCADE
+        passType: 13
+  - first: {fileID: 4800006, guid: f56e60ad0c507204e9fe0e4a10befef9, type: 3}
+    second:
+      variants:
+      - keywords: INSTANCING_ON _DBUFFER_MRT3 _DECAL_LAYERS
+        passType: 13
+      - keywords: INSTANCING_ON _DECAL_LAYERS
+        passType: 13
+  - first: {fileID: 4800008, guid: f56e60ad0c507204e9fe0e4a10befef9, type: 3}
+    second:
+      variants:
+      - keywords: INSTANCING_ON
+        passType: 13
+  - first: {fileID: 4800010, guid: f56e60ad0c507204e9fe0e4a10befef9, type: 3}
+    second:
+      variants:
+      - keywords: INSTANCING_ON
+        passType: 13
+  - first: {fileID: 4800000, guid: 18223169cc01f3c4fae97cc0ae1802a5, type: 3}
+    second:
+      variants:
+      - keywords: INSTANCING_ON
+        passType: 13
+  - first: {fileID: 4800002, guid: 18223169cc01f3c4fae97cc0ae1802a5, type: 3}
+    second:
+      variants:
+      - keywords: INSTANCING_ON
+        passType: 13
+  - first: {fileID: 4800004, guid: 18223169cc01f3c4fae97cc0ae1802a5, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 8
+      - keywords: INSTANCING_ON
+        passType: 8
+      - keywords: INSTANCING_ON _ADDITIONAL_LIGHT_SHADOWS _FORWARD_PLUS _MAIN_LIGHT_SHADOWS_CASCADE
+          _REFLECTION_PROBE_BLENDING _REFLECTION_PROBE_BOX_PROJECTION _SHADOWS_SOFT
+        passType: 13
+      - keywords: INSTANCING_ON _FORWARD_PLUS _MAIN_LIGHT_SHADOWS_CASCADE
+        passType: 13
+  - first: {fileID: 4800006, guid: 18223169cc01f3c4fae97cc0ae1802a5, type: 3}
+    second:
+      variants:
+      - keywords: INSTANCING_ON _DBUFFER_MRT3 _DECAL_LAYERS
+        passType: 13
+      - keywords: INSTANCING_ON _DECAL_LAYERS
+        passType: 13
+  - first: {fileID: 4800008, guid: 18223169cc01f3c4fae97cc0ae1802a5, type: 3}
+    second:
+      variants:
+      - keywords: INSTANCING_ON
+        passType: 13
+  - first: {fileID: 4800010, guid: 18223169cc01f3c4fae97cc0ae1802a5, type: 3}
+    second:
+      variants:
+      - keywords: INSTANCING_ON
+        passType: 0
+      - keywords: INSTANCING_ON _DBUFFER_MRT3
+        passType: 0
+  - first: {fileID: 4800000, guid: aaecb15f4b0b0114089da5886689de93, type: 3}
+    second:
+      variants:
+      - keywords: INSTANCING_ON _DBUFFER_MRT3 _DECAL_LAYERS
+        passType: 13
+      - keywords: INSTANCING_ON _DECAL_LAYERS
+        passType: 13
+  - first: {fileID: 4800002, guid: aaecb15f4b0b0114089da5886689de93, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 8
+      - keywords: INSTANCING_ON
+        passType: 8
+      - keywords: INSTANCING_ON _ADDITIONAL_LIGHT_SHADOWS _FORWARD_PLUS _MAIN_LIGHT_SHADOWS_CASCADE
+          _REFLECTION_PROBE_BLENDING _REFLECTION_PROBE_BOX_PROJECTION _SHADOWS_SOFT
+        passType: 13
+      - keywords: INSTANCING_ON _FORWARD_PLUS _MAIN_LIGHT_SHADOWS_CASCADE
+        passType: 13
+  - first: {fileID: 4800010, guid: aaecb15f4b0b0114089da5886689de93, type: 3}
+    second:
+      variants:
+      - keywords: INSTANCING_ON
+        passType: 0
+      - keywords: INSTANCING_ON _DBUFFER_MRT3
+        passType: 0
+  - first: {fileID: 4800004, guid: aaecb15f4b0b0114089da5886689de93, type: 3}
+    second:
+      variants:
+      - keywords: INSTANCING_ON
+        passType: 13
+  - first: {fileID: 4800006, guid: aaecb15f4b0b0114089da5886689de93, type: 3}
+    second:
+      variants:
+      - keywords: INSTANCING_ON
+        passType: 13
+  - first: {fileID: 4800008, guid: aaecb15f4b0b0114089da5886689de93, type: 3}
+    second:
+      variants:
+      - keywords: INSTANCING_ON
+        passType: 0
+      - keywords: INSTANCING_ON _DBUFFER_MRT3
+        passType: 0
+  - first: {fileID: 4800012, guid: aaecb15f4b0b0114089da5886689de93, type: 3}
+    second:
+      variants:
+      - keywords: INSTANCING_ON
+        passType: 13
+  - first: {fileID: 4800000, guid: cd37cee378d430647b7e76669a7d4477, type: 3}
+    second:
+      variants:
+      - keywords: INSTANCING_ON
+        passType: 13
+  - first: {fileID: 4800010, guid: cd37cee378d430647b7e76669a7d4477, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 8
+      - keywords: INSTANCING_ON
+        passType: 8
+      - keywords: INSTANCING_ON _ADDITIONAL_LIGHT_SHADOWS _FORWARD_PLUS _MAIN_LIGHT_SHADOWS_CASCADE
+          _REFLECTION_PROBE_BLENDING _REFLECTION_PROBE_BOX_PROJECTION _SHADOWS_SOFT
+        passType: 13
+      - keywords: INSTANCING_ON _FORWARD_PLUS _MAIN_LIGHT_SHADOWS_CASCADE
+        passType: 13
+  - first: {fileID: 4800002, guid: cd37cee378d430647b7e76669a7d4477, type: 3}
+    second:
+      variants:
+      - keywords: INSTANCING_ON
+        passType: 13
+  - first: {fileID: 4800004, guid: cd37cee378d430647b7e76669a7d4477, type: 3}
+    second:
+      variants:
+      - keywords: INSTANCING_ON
+        passType: 13
+  - first: {fileID: 4800006, guid: cd37cee378d430647b7e76669a7d4477, type: 3}
+    second:
+      variants:
+      - keywords: INSTANCING_ON
+        passType: 0
+      - keywords: INSTANCING_ON _DBUFFER_MRT3
+        passType: 0
+  - first: {fileID: 4800008, guid: cd37cee378d430647b7e76669a7d4477, type: 3}
+    second:
+      variants:
+      - keywords: INSTANCING_ON _DBUFFER_MRT3 _DECAL_LAYERS
+        passType: 13
+      - keywords: INSTANCING_ON _DECAL_LAYERS
+        passType: 13
+  - first: {fileID: 4800000, guid: de7f83cd3ba01b54a815e9b19fdff00b, type: 3}
+    second:
+      variants:
+      - keywords: INSTANCING_ON _DBUFFER_MRT3 _DECAL_LAYERS
+        passType: 13
+      - keywords: INSTANCING_ON _DECAL_LAYERS
+        passType: 13
+  - first: {fileID: 4800002, guid: de7f83cd3ba01b54a815e9b19fdff00b, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 8
+      - keywords: INSTANCING_ON
+        passType: 8
+      - keywords: INSTANCING_ON _ADDITIONAL_LIGHT_SHADOWS _FORWARD_PLUS _MAIN_LIGHT_SHADOWS_CASCADE
+          _REFLECTION_PROBE_BLENDING _REFLECTION_PROBE_BOX_PROJECTION _SHADOWS_SOFT
+        passType: 13
+      - keywords: INSTANCING_ON _FORWARD_PLUS _MAIN_LIGHT_SHADOWS_CASCADE
+        passType: 13
+  - first: {fileID: 4800010, guid: de7f83cd3ba01b54a815e9b19fdff00b, type: 3}
+    second:
+      variants:
+      - keywords: INSTANCING_ON
+        passType: 0
+      - keywords: INSTANCING_ON _DBUFFER_MRT3
+        passType: 0
+  - first: {fileID: 4800004, guid: de7f83cd3ba01b54a815e9b19fdff00b, type: 3}
+    second:
+      variants:
+      - keywords: INSTANCING_ON
+        passType: 13
+  - first: {fileID: 4800006, guid: de7f83cd3ba01b54a815e9b19fdff00b, type: 3}
+    second:
+      variants:
+      - keywords: INSTANCING_ON
+        passType: 13
+  - first: {fileID: 4800008, guid: de7f83cd3ba01b54a815e9b19fdff00b, type: 3}
+    second:
+      variants:
+      - keywords: INSTANCING_ON
+        passType: 0
+      - keywords: INSTANCING_ON _DBUFFER_MRT3
+        passType: 0
+  - first: {fileID: 4800000, guid: 3f4f5174f4cab0e4b89711f1b5b2655e, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 8
+      - keywords: INSTANCING_ON
+        passType: 8
+      - keywords: INSTANCING_ON
+        passType: 13
+  - first: {fileID: 4800002, guid: 3f4f5174f4cab0e4b89711f1b5b2655e, type: 3}
+    second:
+      variants:
+      - keywords: INSTANCING_ON
+        passType: 13
