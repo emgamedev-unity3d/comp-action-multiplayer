@@ -5,8 +5,10 @@ using Unity.NetCode;
 namespace Unity.Template.CompetitiveActionMultiplayer
 {
     [GhostComponent]
-    public struct HoveringWallComponent : IComponentData
+    public struct HoveringEntityComponent : IComponentData
     {
         public float3 originalPosition;
+        public float sinHeight;
+        public float sinLenght;
     }
 }

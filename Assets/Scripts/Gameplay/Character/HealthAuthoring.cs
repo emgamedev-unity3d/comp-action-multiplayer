@@ -26,6 +26,7 @@ namespace Unity.Template.CompetitiveActionMultiplayer
     public struct Health : IComponentData
     {
         public float MaxHealth;
+
         [GhostField(Quantization = 100)]
         public float CurrentHealth;
 
