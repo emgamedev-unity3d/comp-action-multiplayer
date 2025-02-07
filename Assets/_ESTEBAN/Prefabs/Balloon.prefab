@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2660589323386762969}
   - component: {fileID: 7486492857658333470}
   - component: {fileID: 354867182377127784}
+  - component: {fileID: 2194864534590143183}
   - component: {fileID: 1972817892193583022}
   - component: {fileID: -4693128004126362185}
   - component: {fileID: 8784902533875530656}
@@ -70,7 +71,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 706e489bb57f0e24195e5ae0ec744e37, type: 2}
+  - {fileID: 2100000, guid: 979aef027a1c86c42a15ce35fce366fa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -149,6 +150,18 @@ MonoBehaviour:
   UsePreSerialization: 0
   RollbackPredictedSpawnedGhostState: 0
   RollbackPredictionOnStructuralChanges: 1
+--- !u!114 &2194864534590143183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8803517874471903626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a07a5aeaf9a47f08552b9a54241145, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1972817892193583022
 MonoBehaviour:
   m_ObjectHideFlags: 0
