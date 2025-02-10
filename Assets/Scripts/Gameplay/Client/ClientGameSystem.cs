@@ -119,7 +119,8 @@ namespace Unity.Template.CompetitiveActionMultiplayer
                 || SystemAPI.HasComponent<NetworkStreamInGame>(clientEntity))
                 return;
 
-            var joinRequestEntity = state.EntityManager.CreateEntity(ComponentType.ReadOnly<ClientJoinRequestRpc>(),
+            var joinRequestEntity = state.EntityManager.CreateEntity(
+                ComponentType.ReadOnly<ClientJoinRequestRpc>(),
                 ComponentType.ReadWrite<SendRpcCommandRequest>());
             var playerName = GameSettings.Instance.PlayerName;
             if (state.WorldUnmanaged.IsThinClient()) // Random names for thin clients.

@@ -45,7 +45,7 @@
                     "name": "Shoot",
                     "type": "Button",
                     "id": "fe797924-662a-430c-adec-0ad8e35f90c1",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -63,7 +63,7 @@
                     "name": "SpectatorVertical",
                     "type": "Value",
                     "id": "40dffe79-c12a-4c22-8beb-c43868c3f55b",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -72,7 +72,7 @@
                     "name": "TogglePauseMenu",
                     "type": "Button",
                     "id": "c67ae77d-ac15-40e3-8f93-54aae16763f7",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -81,7 +81,16 @@
                     "name": "RequestRespawn",
                     "type": "Button",
                     "id": "be523d53-be6d-445a-b15d-5755eff4e993",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RequestTemporaryBalloonParty",
+                    "type": "Button",
+                    "id": "b67bf147-0a4b-44a9-b827-2bb20ee3b6e2",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -349,6 +358,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "RequestRespawn",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "aa93105f-c54f-4aa4-9435-e174c4bcbc60",
+                    "path": "<Keyboard>/p",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Default",
+                    "action": "RequestTemporaryBalloonParty",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

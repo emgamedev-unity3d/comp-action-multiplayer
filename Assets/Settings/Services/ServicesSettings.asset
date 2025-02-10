@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf27119d946c6ff4eae55b6e1699f5a1, type: 3}
   m_Name: ServicesSettings
   m_EditorClassIdentifier: 
-  MatchmakerTypeRequested: 0
-  ConnectionTypeRequested: 0
+  MatchmakerTypeRequested: 1
+  ConnectionTypeRequested: 1

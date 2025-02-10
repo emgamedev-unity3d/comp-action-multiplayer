@@ -69,7 +69,7 @@ namespace Unity.Template.CompetitiveActionMultiplayer
                     ""name"": ""Shoot"",
                     ""type"": ""Button"",
                     ""id"": ""fe797924-662a-430c-adec-0ad8e35f90c1"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -87,7 +87,7 @@ namespace Unity.Template.CompetitiveActionMultiplayer
                     ""name"": ""SpectatorVertical"",
                     ""type"": ""Value"",
                     ""id"": ""40dffe79-c12a-4c22-8beb-c43868c3f55b"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
@@ -96,7 +96,7 @@ namespace Unity.Template.CompetitiveActionMultiplayer
                     ""name"": ""TogglePauseMenu"",
                     ""type"": ""Button"",
                     ""id"": ""c67ae77d-ac15-40e3-8f93-54aae16763f7"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -105,7 +105,16 @@ namespace Unity.Template.CompetitiveActionMultiplayer
                     ""name"": ""RequestRespawn"",
                     ""type"": ""Button"",
                     ""id"": ""be523d53-be6d-445a-b15d-5755eff4e993"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""RequestTemporaryBalloonParty"",
+                    ""type"": ""Button"",
+                    ""id"": ""b67bf147-0a4b-44a9-b827-2bb20ee3b6e2"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -373,6 +382,17 @@ namespace Unity.Template.CompetitiveActionMultiplayer
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""RequestRespawn"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""aa93105f-c54f-4aa4-9435-e174c4bcbc60"",
+                    ""path"": ""<Keyboard>/p"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Default"",
+                    ""action"": ""RequestTemporaryBalloonParty"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -716,6 +736,7 @@ namespace Unity.Template.CompetitiveActionMultiplayer
             m_Gameplay_SpectatorVertical = m_Gameplay.FindAction("SpectatorVertical", throwIfNotFound: true);
             m_Gameplay_TogglePauseMenu = m_Gameplay.FindAction("TogglePauseMenu", throwIfNotFound: true);
             m_Gameplay_RequestRespawn = m_Gameplay.FindAction("RequestRespawn", throwIfNotFound: true);
+            m_Gameplay_RequestTemporaryBalloonParty = m_Gameplay.FindAction("RequestTemporaryBalloonParty", throwIfNotFound: true);
             // UI
             m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
             m_UI_Submit = m_UI.FindAction("Submit", throwIfNotFound: true);
@@ -805,6 +826,7 @@ namespace Unity.Template.CompetitiveActionMultiplayer
         private readonly InputAction m_Gameplay_SpectatorVertical;
         private readonly InputAction m_Gameplay_TogglePauseMenu;
         private readonly InputAction m_Gameplay_RequestRespawn;
+        private readonly InputAction m_Gameplay_RequestTemporaryBalloonParty;
         public struct GameplayActions
         {
             private @FPSInputActions m_Wrapper;
@@ -818,6 +840,7 @@ namespace Unity.Template.CompetitiveActionMultiplayer
             public InputAction @SpectatorVertical => m_Wrapper.m_Gameplay_SpectatorVertical;
             public InputAction @TogglePauseMenu => m_Wrapper.m_Gameplay_TogglePauseMenu;
             public InputAction @RequestRespawn => m_Wrapper.m_Gameplay_RequestRespawn;
+            public InputAction @RequestTemporaryBalloonParty => m_Wrapper.m_Gameplay_RequestTemporaryBalloonParty;
             public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -854,6 +877,9 @@ namespace Unity.Template.CompetitiveActionMultiplayer
                 @RequestRespawn.started += instance.OnRequestRespawn;
                 @RequestRespawn.performed += instance.OnRequestRespawn;
                 @RequestRespawn.canceled += instance.OnRequestRespawn;
+                @RequestTemporaryBalloonParty.started += instance.OnRequestTemporaryBalloonParty;
+                @RequestTemporaryBalloonParty.performed += instance.OnRequestTemporaryBalloonParty;
+                @RequestTemporaryBalloonParty.canceled += instance.OnRequestTemporaryBalloonParty;
             }
 
             private void UnregisterCallbacks(IGameplayActions instance)
@@ -885,6 +911,9 @@ namespace Unity.Template.CompetitiveActionMultiplayer
                 @RequestRespawn.started -= instance.OnRequestRespawn;
                 @RequestRespawn.performed -= instance.OnRequestRespawn;
                 @RequestRespawn.canceled -= instance.OnRequestRespawn;
+                @RequestTemporaryBalloonParty.started -= instance.OnRequestTemporaryBalloonParty;
+                @RequestTemporaryBalloonParty.performed -= instance.OnRequestTemporaryBalloonParty;
+                @RequestTemporaryBalloonParty.canceled -= instance.OnRequestTemporaryBalloonParty;
             }
 
             public void RemoveCallbacks(IGameplayActions instance)
@@ -1071,6 +1100,7 @@ namespace Unity.Template.CompetitiveActionMultiplayer
             void OnSpectatorVertical(InputAction.CallbackContext context);
             void OnTogglePauseMenu(InputAction.CallbackContext context);
             void OnRequestRespawn(InputAction.CallbackContext context);
+            void OnRequestTemporaryBalloonParty(InputAction.CallbackContext context);
         }
         public interface IUIActions
         {
