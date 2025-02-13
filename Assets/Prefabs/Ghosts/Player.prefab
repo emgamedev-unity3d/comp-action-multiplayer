@@ -82,6 +82,8 @@ MonoBehaviour:
   TrackInterpolationDelay: 1
   GhostGroup: 0
   UsePreSerialization: 0
+  RollbackPredictedSpawnedGhostState: 0
+  RollbackPredictionOnStructuralChanges: 1
 --- !u!114 &6729084813064277831
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -18,7 +18,6 @@ GameObject:
   - component: {fileID: 1972817892193583022}
   - component: {fileID: -4693128004126362185}
   - component: {fileID: 8784902533875530656}
-  - component: {fileID: -6165738043861228440}
   m_Layer: 0
   m_Name: PartyBalloon
   m_TagString: Untagged
@@ -35,7 +34,7 @@ Transform:
   m_GameObject: {fileID: 8803517874471903626}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.7955198, y: 1.3818412, z: 22.68575}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -208,15 +207,3 @@ MonoBehaviour:
     PrefabType: 7
     SendTypeOptimization: -1
     VariantHash: 11271189483249585176
---- !u!114 &-6165738043861228440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8803517874471903626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c96ea617348cecb4cb1aeaaa86158a38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

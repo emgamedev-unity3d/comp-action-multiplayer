@@ -19,7 +19,8 @@ namespace Unity.Template.CompetitiveActionMultiplayer
         public void OnCreate(ref SystemState state)
         {
             state.RequireForUpdate<PartyBalloonSpawnerComponent>();
-            state.RequireForUpdate<BeginSimulationEntityCommandBufferSystem.Singleton>();
+            state.RequireForUpdate<
+                BeginSimulationEntityCommandBufferSystem.Singleton>();
         }
 
         public void OnUpdate(ref SystemState state)
@@ -43,7 +44,8 @@ namespace Unity.Template.CompetitiveActionMultiplayer
                     SystemAPI.GetSingletonRW<
                         BeginSimulationEntityCommandBufferSystem.Singleton>();
 
-                var ecb = ecbSingleton.ValueRW.CreateCommandBuffer(state.WorldUnmanaged);
+                var ecb = ecbSingleton.ValueRW.CreateCommandBuffer(
+                    state.WorldUnmanaged);
 
                 // destroy the RPC request entity, we no longer need it
                 ecb.DestroyEntity(entity);
@@ -53,33 +55,24 @@ namespace Unity.Template.CompetitiveActionMultiplayer
 
                 // Spawn the balloons!
                 SpawnNewPartyBalloon(
-                    ref state,
                     ecb,
                     partyBalloonSpawner.ValueRO.partyBalloonPrefab,
                     new float3(-1.79f, 1.38f, 22.68f));
 
                 SpawnNewPartyBalloon(
-                    ref state,
                     ecb,
                     partyBalloonSpawner.ValueRO.partyBalloonPrefab,
-                    new float3(-1.55000019f, 5.38f, 15.68f));
+                    new float3(-1.55f, 5.38f, 15.68f));
             }
         }
 
-        [BurstCompile]
-        public void OnDestroy(ref SystemState state)
-        {
-
-        }
-
         private void SpawnNewPartyBalloon(
-            ref SystemState state,
             EntityCommandBuffer ecb,
             Entity partyBalloonPrefab,
             float3 position)
         {
             var newPartyBalloon = ecb.Instantiate(partyBalloonPrefab);
-            ecb.SetName(newPartyBalloon, "PartyBalloon!");
+            ecb.SetName(newPartyBalloon, "Party-Balloon");
 
             var hoveringComp = new HoveringEntityComponent()
             {
@@ -93,7 +86,7 @@ namespace Unity.Template.CompetitiveActionMultiplayer
             var newPartyBalloonTransform =
                 LocalTransform.FromPosition(position);
 
-            Debug.Log($"new party balloon transform {newPartyBalloonTransform}");
+            Debug.Log($"Party Balloon transform {newPartyBalloonTransform}");
 
             ecb.SetComponent(newPartyBalloon, newPartyBalloonTransform);
         }

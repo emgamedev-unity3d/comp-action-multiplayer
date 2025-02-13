@@ -21,11 +21,18 @@ namespace Unity.Template.CompetitiveActionMultiplayer
         [BurstCompile]
         public void OnUpdate(ref SystemState state)
         {
-            if (!SystemAPI.TryGetSingleton<ClientServerTickRate>(out var tickRateConfig))
+            if (!SystemAPI.TryGetSingleton<ClientServerTickRate>(
+                    out var tickRateConfig))
                 tickRateConfig.ResolveDefaults();
 
-            var elapsedTime =
-                SystemAPI.GetSingleton<NetworkTime>().ServerTick.TickIndexForValidTick / (float)tickRateConfig.SimulationTickRate;
+
+            var serverTick =
+                SystemAPI.GetSingleton<NetworkTime>()
+                    .ServerTick.TickIndexForValidTick;
+
+            var simulationTickRate = (float)tickRateConfig.SimulationTickRate;
+
+            var elapsedTime = serverTick / simulationTickRate;
 
             foreach (var (transform, hoveringWallComponent)
                 in SystemAPI.Query<
@@ -37,7 +44,8 @@ namespace Unity.Template.CompetitiveActionMultiplayer
                 var originalPosition = hoveringWallComponent.originalPosition;
                 originalPosition.y +=
                     (hoveringWallComponent.sinHeight *
-                        (float)math.sin(elapsedTime * hoveringWallComponent.sinLenght));
+                        (float)math.sin(
+                            elapsedTime * hoveringWallComponent.sinLenght));
 
                 transform.ValueRW.Position = originalPosition;
             }

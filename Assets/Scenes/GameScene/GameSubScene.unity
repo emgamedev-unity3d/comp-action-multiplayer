@@ -590,6 +590,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9003592308446224135, guid: 62da84a97feaa4630af0e9d61c4535e9, type: 3}
+      propertyPath: partyModeDuration
+      value: 5.85
+      objectReference: {fileID: 0}
     - target: {fileID: 2780212333593429112, guid: 62da84a97feaa4630af0e9d61c4535e9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
