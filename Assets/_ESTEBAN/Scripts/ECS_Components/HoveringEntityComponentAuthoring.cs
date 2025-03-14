@@ -9,7 +9,7 @@ namespace Unity.Template.CompetitiveActionMultiplayer
         private float sinHeight = 2f;
 
         [SerializeField]
-        public float sinLenght = 0.5f;
+        private float sinLength = 0.5f;
 
         class Baker : Baker<HoveringEntityComponentAuthoring>
         {
@@ -22,7 +22,7 @@ namespace Unity.Template.CompetitiveActionMultiplayer
                 {
                     originalPosition = authoring.transform.position,
                     sinHeight = authoring.sinHeight,
-                    sinLenght = authoring.sinLenght
+                    sinLenght = authoring.sinLength
                 });
             }
         }
