@@ -23,16 +23,19 @@ namespace Unity.Template.CompetitiveActionMultiplayer
             {
                 // In the editor, only connect the first time as users should be able to
                 // use the netcode window to change connection status.
-                if (Application.isEditor && m_HasAttemptedToConnectAtLeastOnce) return;
+                if (Application.isEditor && m_HasAttemptedToConnectAtLeastOnce)
+                    return;
 
                 // No main client world to follow, so cannot connect.
                 var clientWorld = ClientServerBootstrap.ClientWorld;
-                if (clientWorld == null || !clientWorld.IsCreated) return;
+                if (clientWorld == null || !clientWorld.IsCreated)
+                    return;
 
                 // Wait until after the main client is loading in.
-                if (ConnectionSettings.Instance.GameConnectionState != GameConnectionState.Connected) return;
+                if (ConnectionSettings.Instance.GameConnectionState != GameConnectionState.Connected)
+                    return;
 
-                // No need to call connect if already got a connection.
+                // No need to call connect if already got a connection
                 if (SystemAPI.HasSingleton<NetworkStreamConnection>())
                 {
                     m_HasAttemptedToConnectAtLeastOnce = true;
@@ -40,8 +43,12 @@ namespace Unity.Template.CompetitiveActionMultiplayer
                 }
 
                 // Connect:
-                ref var networkStreamDriver = ref SystemAPI.GetSingletonRW<NetworkStreamDriver>().ValueRW;
-                networkStreamDriver.Connect(state.EntityManager, ConnectionSettings.Instance.ConnectionEndpoint);
+                ref var networkStreamDriver = 
+                    ref SystemAPI.GetSingletonRW<NetworkStreamDriver>().ValueRW;
+
+                networkStreamDriver.Connect(
+                    state.EntityManager,
+                    ConnectionSettings.Instance.ConnectionEndpoint);
             }
         }
     }

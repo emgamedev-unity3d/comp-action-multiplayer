@@ -8,6 +8,7 @@ using Unity.Physics;
 using Unity.Physics.Extensions;
 using Unity.Transforms;
 using UnityEngine;
+using UnityEngine.Rendering;
 using Random = Unity.Mathematics.Random;
 
 namespace Unity.Template.CompetitiveActionMultiplayer
@@ -167,6 +168,12 @@ namespace Unity.Template.CompetitiveActionMultiplayer
                     ecb.AddComponent(rpcReceive.SourceConnection, new JoinedClient { PlayerEntity = playerEntity });
                     // Stream in game
                     ecb.AddComponent(rpcReceive.SourceConnection, new NetworkStreamInGame());
+
+                    // Added by Esteban...
+                    // Enables Thin Clients can move!
+                    ecb.SetComponent(
+                        rpcReceive.SourceConnection,
+                        new CommandTarget { targetEntity = playerEntity });
 
                     state.EntityManager.GetName(gameResources.PlayerGhost, out var playerNameFs);
                     if (playerNameFs.IsEmpty) playerNameFs = nameof(gameResources.PlayerGhost);

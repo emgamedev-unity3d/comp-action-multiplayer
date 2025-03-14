@@ -72,3 +72,5 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 /[Aa]ssets/[Ss]ceneDependencyCache/*
 Assets/SceneDependencyCache.meta
+Assets/GlobalEntitiesDependencies/GlobalEntitySceneDependency.asset
+Assets/GlobalEntitiesDependencies/GlobalEntitySceneDependency.asset.meta
