@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 354867182377127784}
   - component: {fileID: 2194864534590143183}
   - component: {fileID: 1972817892193583022}
-  - component: {fileID: -4693128004126362185}
   - component: {fileID: 8784902533875530656}
   m_Layer: 0
   m_Name: PartyBalloon
@@ -169,26 +168,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8803517874471903626}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e41f8cb769cfe9048ab1ec5451c487d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 1
---- !u!114 &-4693128004126362185
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8803517874471903626}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6352e6b1aa3740609154c4cb98fba95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sinHeight: 1
-  sinLenght: 0.8
+  MaxHealth: 5
 --- !u!114 &8784902533875530656
 MonoBehaviour:
   m_ObjectHideFlags: 0

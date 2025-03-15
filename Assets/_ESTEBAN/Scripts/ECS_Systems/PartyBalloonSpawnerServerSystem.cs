@@ -86,8 +86,6 @@ namespace Unity.Template.CompetitiveActionMultiplayer
             var newPartyBalloonTransform =
                 LocalTransform.FromPosition(position);
 
-            Debug.Log($"Party Balloon transform {newPartyBalloonTransform}");
-
             ecb.SetComponent(newPartyBalloon, newPartyBalloonTransform);
         }
     }
