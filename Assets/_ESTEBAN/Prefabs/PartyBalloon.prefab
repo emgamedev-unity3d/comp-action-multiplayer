@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 2194864534590143183}
   - component: {fileID: 1972817892193583022}
   - component: {fileID: 8784902533875530656}
+  - component: {fileID: -256282796278695239}
   m_Layer: 0
   m_Name: PartyBalloon
   m_TagString: Untagged
@@ -192,3 +193,16 @@ MonoBehaviour:
     PrefabType: 7
     SendTypeOptimization: -1
     VariantHash: 11271189483249585176
+--- !u!114 &-256282796278695239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8803517874471903626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54b6467bcd530cd4d809fae70ea0ca9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 0.6856526, g: 1, b: 0.514151, a: 0}
