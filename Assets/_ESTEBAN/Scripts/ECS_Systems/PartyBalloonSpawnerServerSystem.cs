@@ -3,7 +3,8 @@ using Unity.Entities;
 using Unity.Mathematics;
 using Unity.NetCode;
 using Unity.Transforms;
-using UnityEngine;
+using Debug = UnityEngine.Debug;
+using Random = UnityEngine.Random;
 
 namespace Unity.Template.CompetitiveActionMultiplayer
 {
@@ -38,7 +39,8 @@ namespace Unity.Template.CompetitiveActionMultiplayer
             foreach (var (partyBalloonsRequest, rpcReceive, entity) in
                      SystemAPI.Query<
                          ClientRequestPartyBalloonsRpc,
-                         ReceiveRpcCommandRequest>().WithEntityAccess())
+                         ReceiveRpcCommandRequest>()
+                            .WithEntityAccess())
             {
                 var ecbSingleton =
                     SystemAPI.GetSingletonRW<
@@ -53,16 +55,18 @@ namespace Unity.Template.CompetitiveActionMultiplayer
 
                 partyBalloonSpawner.ValueRW.isInPartyMode = true;
 
-                // Spawn the balloons!
-                SpawnNewPartyBalloon(
-                    ecb,
-                    partyBalloonSpawner.ValueRO.partyBalloonPrefab,
-                    new float3(-1.79f, 1.38f, 22.68f));
 
-                SpawnNewPartyBalloon(
-                    ecb,
-                    partyBalloonSpawner.ValueRO.partyBalloonPrefab,
-                    new float3(-1.55f, 5.38f, 15.68f));
+                // Spawn the balloons!
+                for(int i = 0; i < 10; ++i)
+                {
+                    SpawnNewPartyBalloon(
+                        ecb,
+                        partyBalloonSpawner.ValueRO.partyBalloonPrefab,
+                        new float3(
+                            Random.Range(-5f, 5f),
+                            5.4f,
+                            Random.Range(-10f, 24f)));
+                }
             }
         }
 
@@ -74,11 +78,13 @@ namespace Unity.Template.CompetitiveActionMultiplayer
             var newPartyBalloon = ecb.Instantiate(partyBalloonPrefab);
             ecb.SetName(newPartyBalloon, "Party-Balloon");
 
+            Debug.Log($"party balloon position is: {position}");
+
             var hoveringComp = new HoveringEntityComponent()
             {
                 originalPosition = position,
-                sinHeight = 1f,
-                sinLenght = 0.8f
+                sinHeight = Random.Range(.8f, 1.2f),
+                sinLenght = Random.Range(.6f, 1.1f)
             };
 
             ecb.AddComponent(newPartyBalloon, hoveringComp);
